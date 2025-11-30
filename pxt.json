@@ -1,7 +1,10 @@
 {
     "name": "voice-83",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "matrix": "github:calliope-net/matrix#v1.0.1",
+        "pins": "github:calliope-net/pins#v1.4.2",
+        "v3": "*"
     },
     "files": [
         "main.blocks",
