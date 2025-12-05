@@ -24,6 +24,13 @@ function macheEtwas (id: number) {
         basic.turnRgbLedOff()
     }
 }
+function GitHub () {
+    pins.comment(pins.pins_text("calliope-net/voice-83"))
+    pins.comment(pins.pins_text("Erweiterungen laden:"))
+    pins.comment(pins.pins_text("calliope-net/pins; calliope-net/matrix"))
+    pins.comment(pins.pins_text("Anleitung:"))
+    pins.comment(pins.pins_text("elssner.github.io/ft-Controller-I2C/voice_konsole/"))
+}
 function Zeile1_7 (text: string) {
     matrix.clearMatrix(1, 7)
     zeilen = Math.trunc(text.length / 16)
@@ -41,6 +48,7 @@ let Kommando_ID = 0
 let zeilen = 0
 matrix.init(matrix.ePages.y64)
 matrix.displayMatrix()
+basic.pause(2000)
 let wachzeit = pins.voice_register(pins.pins_voice_eRegister(pins.voice_eRegister.WAKE_TIME))
 Zeile0(wachzeit)
 let connected = wachzeit > 0
