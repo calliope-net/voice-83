@@ -5,8 +5,7 @@
         "core": "*",
         "matrix": "github:calliope-net/matrix#v1.0.1",
         "pins": "github:calliope-net/pins#v1.4.3",
-        "v3": "*",
-        "v2": "*"
+        "v3": "*"
     },
     "files": [
         "main.blocks",
